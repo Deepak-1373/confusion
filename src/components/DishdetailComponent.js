@@ -15,7 +15,7 @@ class DishDetail extends React.Component {
                         month: 'long',
                         year: 'numeric'
 
-                    }).format(new Date(comment.date))}
+                    }).format(new Date(Date.parse(comment.date)))}
                     </p>
                 </li>
             )
@@ -58,9 +58,11 @@ class DishDetail extends React.Component {
         const dishId = this.renderDish(dish)
         const commentDish = this.renderComments(dish.comments)
         return (
+            <div className="container">
             <div className='row'>
                 {dishId}
                 {commentDish}
+            </div>
             </div>
         )
     }
