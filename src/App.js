@@ -2,7 +2,6 @@ import React from 'react';
 import MainComponent from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Deepak from './components/Deepak.js';
 
 export default class App extends React.Component {
 
@@ -11,8 +10,6 @@ export default class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <Deepak />
-          <Dummy />
-          <Dummy />
         </div>
       </BrowserRouter>
     );
