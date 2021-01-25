@@ -1,1 +1,1 @@
-const hello = ReactDom.render(<Life/>);
+export const hello = ReactDom.render(<Life/>);
