@@ -9,6 +9,7 @@ export default class App extends React.Component {
     return (
       <BrowserRouter>
         <div className="App">
+          <Hello />
         </div>
       </BrowserRouter>
     );
